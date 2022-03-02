@@ -6,7 +6,7 @@ let preloader = document.querySelector(".preloader");
 let getOneMovie = async(id) => {
     id = sessionStorage.getItem("movieID");
 
-    let response = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=535b116`);
+    let response = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=535b116`);
     
       if (!response.ok) {
         throw new Error("Something Went Wrong");
