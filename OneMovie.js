@@ -29,7 +29,7 @@ let getOneMovie = async(id) => {
             <p><span>Writer:</span> ${movie.Writer}</p> 
             <p><span>Plot:</span> ${movie.Plot}</p>
             <div class="go-back-container">
-            <a class="go-back" href="./MovieApp.html">Go Back</a>
+            <a class="go-back" href="index.html">Go Back</a>
             </div>
             </section>
             `  
