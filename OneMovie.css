@@ -1,0 +1,153 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* =============
+      preloader  
+   ==============*/
+
+.preloader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.preloader { 
+   display: block;
+   background-color: white; 
+}
+
+.preloader.hide {
+    display: none;
+}
+
+/* ============
+   main styles
+  =============*/
+
+.section-container {
+    font-size: 1.5rem;
+    margin: 1em 0.5em 0 0.5em;
+    font-family: 'Luxurious Roman', cursive;
+    background: rgba(255, 255, 255, 0.151);
+    border-radius: 21px;
+    padding: 1em;
+}
+
+.section-container p {
+    padding-bottom: 0.2em;
+}
+
+.section-container span {
+    font-weight: bold;
+}
+
+.img-container {
+    float: left;
+}
+
+.img-container img {
+    width: 360px;
+    height: 390px;
+    margin-right: 1em;
+}
+
+.go-back-container { 
+    margin: 1em 1em 1em 0;
+    float: right;
+}
+
+.go-back {
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);    
+    text-decoration: none;
+    border: 1px solid rgb(255, 250, 250);
+    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.212);
+    border-radius: 21px;
+    padding: 0.3em;
+    color: black;
+}
+
+.go-back:hover {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); 
+}
+
+
+@media screen and (min-width: 1440px) {
+    .section-container {
+        font-size: 2rem;
+    }
+
+    .img-container img {
+        width: 360px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .section-container {
+        font-size: 4rem;
+    }
+
+    .img-container img {
+        width: 741px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+
+    .section-container {
+        font-size: 1.2rem;
+    }
+
+    .section-container h2 {
+        text-align: center;
+    }
+
+    .img-container {
+        float: none;
+        text-align: center;
+    }
+
+    .img-container img {
+        width: 201px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .section-container {
+        font-size: 1rem;
+    }
+
+    .section-container h2 {
+        text-align: center;
+    }
+
+    .img-container {
+        float: none;
+        text-align: center;
+    }
+
+    .img-container img {
+        width: 190px;
+        height: auto;
+    }
+
+    .go-back-container {
+        float: none;
+        text-align: center;
+    }
+    
+}
