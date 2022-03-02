@@ -6,7 +6,7 @@ let resultsContainer = document.querySelector(".results-container");
 // fetch movies
 let getMovies = async (inputValue) => {
   let response = await fetch(
-    `http://www.omdbapi.com/?s=${inputValue}&apikey=535b116`
+    ` https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?s=${inputValue}&apikey=535b116`
   );
 
   if (!response.ok) {
